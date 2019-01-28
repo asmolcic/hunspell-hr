@@ -1,0 +1,20 @@
+Za izradu RPM paketa potrebno je imati instaliranu okolinu za alat rpmbuild. 
+Neke od uputa:
+https://tecadmin.net/create-rpm-of-your-own-script-in-centosredhat/
+
+Nakon tog je potrebno pokrenuti program build.sh.
+
+Nakon izgradnje rpm paketa on se nalazi u direktoriju: ~/rpmbuild/RPMS
+
+Instaliranje rpm paketa:
+
+$ rpm -ivh hunspell-hr-20190201.noarch.rpm
+
+Kako izlistati sadržaj postojećeg instaliranog rpm paketa:
+
+$ rpm -ql hunspell-hr 
+
+Kako vidjeti koje rječnike hunspell koristi i na kojim su lokacijama u sustavu:
+
+$ hunspell -D
+(Ctrl+C za izlazak)
